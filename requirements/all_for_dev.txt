@@ -1,3 +1,5 @@
 # All packages needed for the project development.
 
 -r fml_api.txt
+
+pre-commit==3.7.1
