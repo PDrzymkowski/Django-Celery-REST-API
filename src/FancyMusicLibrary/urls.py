@@ -21,4 +21,5 @@ from django.urls import path
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", include("fml_api.api.urls")),
+    path("", include("fml_api.swagger")),
 ]
