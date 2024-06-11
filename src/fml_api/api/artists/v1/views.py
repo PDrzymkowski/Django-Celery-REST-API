@@ -22,6 +22,7 @@ class ArtistSongsView(generics.ListAPIView):
     """View for Songs released by a particular Artist."""
 
     serializer_class = SongSerializer
+    pagination_class = SmallPagesPagination
 
     def get_queryset(self):
         artist_id = self.kwargs["artist_id"]
@@ -32,6 +33,7 @@ class ArtistSongAlbumsView(generics.ListAPIView):
     """View for Song Albums released by a particular Artist."""
 
     serializer_class = SongAlbumSerializer
+    pagination_class = SmallPagesPagination
 
     def get_queryset(self):
         artist_id = self.kwargs["artist_id"]

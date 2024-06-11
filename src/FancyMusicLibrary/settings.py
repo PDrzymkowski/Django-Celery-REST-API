@@ -130,6 +130,8 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+FIXTURE_DIRS = [BASE_DIR / "fml_api/tests/fixtures/json"]
+
 # REST Framework settings
 REST_FRAMEWORK = {
     "DEFAULT_RENDERER_CLASSES": [

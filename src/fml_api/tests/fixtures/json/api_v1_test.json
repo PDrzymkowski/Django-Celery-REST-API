@@ -1,0 +1,74 @@
+[
+    {
+        "model": "fml_api.musicgenre",
+        "pk": "1ad4a4c5-67a5-4ad7-a6b4-a1234567890b",
+        "fields": {
+            "id": "1ad4a4c5-67a5-4ad7-a6b4-a1234567890b",
+            "name": "Rock",
+            "description": "A genre of popular music.",
+            "created_at": "2023-06-01T12:00:00Z",
+            "updated_at": "2023-06-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "fml_api.musicgenre",
+        "pk": "2ad4a4c5-67a5-4ad7-a6b4-b1234567890c",
+        "fields": {
+            "id": "2ad4a4c5-67a5-4ad7-a6b4-b1234567890c",
+            "name": "Jazz",
+            "description": "A genre of smooth music.",
+            "created_at": "2023-06-01T12:00:00Z",
+            "updated_at": "2023-06-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "fml_api.artist",
+        "pk": "3ad4a4c5-67a5-4ad7-a6b4-c1234567890d",
+        "fields": {
+            "name": "Test Artist",
+            "bio": "This is a test artist.",
+            "country": "Test Country",
+            "created_at": "2023-06-01T12:00:00Z",
+            "updated_at": "2023-06-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "fml_api.song",
+        "pk": "4ad4a4c5-67a5-4ad7-a6b4-d1234567890e",
+        "fields": {
+            "title": "Test Song 1",
+            "artist": "3ad4a4c5-67a5-4ad7-a6b4-c1234567890d",
+            "genre": "1ad4a4c5-67a5-4ad7-a6b4-a1234567890b",
+            "release_date": "2023-06-01T12:00:00Z",
+            "length": "00:03:30",
+            "created_at": "2023-06-01T12:00:00Z",
+            "updated_at": "2023-06-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "fml_api.song",
+        "pk": "5ad4a4c5-67a5-4ad7-a6b4-e1234567890f",
+        "fields": {
+            "title": "Test Song 2",
+            "artist": "3ad4a4c5-67a5-4ad7-a6b4-c1234567890d",
+            "genre": "2ad4a4c5-67a5-4ad7-a6b4-b1234567890c",
+            "release_date": "2023-06-01T12:00:00Z",
+            "length": "00:04:30",
+            "created_at": "2023-06-01T12:00:00Z",
+            "updated_at": "2023-06-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "fml_api.songalbum",
+        "pk": "6ad4a4c5-67a5-4ad7-a6b4-f12345678901",
+        "fields": {
+            "title": "Test Album",
+            "artist": "3ad4a4c5-67a5-4ad7-a6b4-c1234567890d",
+            "release_date": "2023-06-01",
+            "genre": "1ad4a4c5-67a5-4ad7-a6b4-a1234567890b",
+            "created_at": "2023-06-01T12:00:00Z",
+            "updated_at": "2023-06-01T12:00:00Z",
+            "songs": ["4ad4a4c5-67a5-4ad7-a6b4-d1234567890e", "5ad4a4c5-67a5-4ad7-a6b4-e1234567890f"]
+        }
+    }
+]
