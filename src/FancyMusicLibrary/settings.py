@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 import dj_database_url
+from celery.schedules import crontab
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -158,3 +159,10 @@ CELERY_ACCEPT_CONTENT = ["json"]
 CELERY_TASK_SERIALIZER = "json"
 CELERY_RESULT_SERIALIZER = "json"
 CELERY_TIMEZONE = "UTC"
+
+CELERY_BEAT_SCHEDULE = {
+    "dump_data_to_csv": {
+        "task": "common.tasks.dump_data_to_csv.dump_data_to_csv",
+        "schedule": crontab(hour="12"),
+    },
+}
